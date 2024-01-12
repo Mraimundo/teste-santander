@@ -7,6 +7,10 @@
 
 .selicContainer h2 {
   font-weight: 500;
-  font-size: 1.25rem;
+  font-size: 1rem;
   margin-bottom: 1.5rem;
+
+  @media (min-width: 1284px) {
+    font-size: 1.25rem;
+  }
 }

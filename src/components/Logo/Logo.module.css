@@ -1,7 +1,7 @@
 .logoLink {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 0.75rem;
   text-decoration: none;
   border: none;
 }
