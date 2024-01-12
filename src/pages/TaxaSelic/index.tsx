@@ -1,3 +1,4 @@
+import { ButtonBackToTop } from "../../components/ButtonBackToTop/ButtonBackToTop";
 import { Header } from "../../components/Header/Header";
 import { InflationTable } from "../../components/InflationTable/InflationTable";
 import { SearchForm } from "../../components/SearchForm/SearchForm";
@@ -6,12 +7,12 @@ import { useSelicData } from "../../hooks/selic-data";
 import styles from "./selic.module.css";
 
 const inflationData = [
-  { month: "Jan", projection: 3.5 },
-  { month: "Feb", projection: 4.0 },
-  { month: "Marc", projection: 4.25 },
-  { month: "Abr", projection: 5.0 },
-  { month: "Maio", projection: 5.5 },
-  { month: "Jun", projection: 6.0 },
+  { month: "Janeiro/2023", projection: 3.5 },
+  { month: "Fevereiro/2023", projection: 4.0 },
+  { month: "Março/2023", projection: 4.25 },
+  { month: "Abril/2023", projection: 5.0 },
+  { month: "Maio/2023", projection: 5.5 },
+  { month: "Junho/2023", projection: 6.0 },
 ];
 
 export function TaxaSelic() {
@@ -26,6 +27,7 @@ export function TaxaSelic() {
         <SearchForm />
         <InflationTable inflationData={inflationData} />
       </section>
+      <ButtonBackToTop />
     </>
   );
 }

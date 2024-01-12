@@ -1,0 +1,23 @@
+.buttonContainer {
+  position: fixed;
+  right: 4px;
+  bottom: 4px;
+  z-index: 20;
+}
+
+.buttonContainer button {
+  background: var(--green-300);
+  padding: 1rem 1.5rem;
+  border: none;
+  border-radius: 0.5rem;
+  color: var(--gray-100);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2px;
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+}
+
+.buttonContainer button:hover {
+  background: var(--green-500);
+}

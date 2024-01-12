@@ -15,7 +15,7 @@ export function InflationTable({ inflationData }: InflationTableProps) {
       <table className={styles.tableContainer}>
         <thead>
           <tr>
-            <th>Mês</th>
+            <th>Mês/Ano</th>
             <th>Projeção</th>
           </tr>
         </thead>
