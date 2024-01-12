@@ -2,27 +2,42 @@
   "data": [
     {
       "id": 1,
-      "author": {
-        "avatarUrl": "https://github.com/Mraimundo.png",
-        "name": "Mouzinho Raimundo",
-        "role": "Web Developer"
-      }
-    },
-    {
-      "id": 2,
-      "author": {
-        "avatarUrl": "https://github.com/Mraimundo.png",
-        "name": "Mouzinho Raimundo",
-        "role": "Web Developer"
-      }
-    },
-    {
-      "id": 3,
-      "author": {
-        "avatarUrl": "https://github.com/Mraimundo.png",
-        "name": "Mouzinho Raimundo",
-        "role": "Web Developer"
-      }
+      "selicData": [
+        {
+          "month": "Jan",
+          "selicRate": 4.25
+        },
+        {
+          "month": "Fev",
+          "selicRate": 4.5
+        },
+        {
+          "month": "Mar",
+          "selicRate": 5.5
+        },
+        {
+          "month": "Abr",
+          "projection": 5.25
+        }
+      ],
+      "inflationData": [
+        {
+          "month": "Jan",
+          "projection": 3.5
+        },
+        {
+          "month": "Fev",
+          "projection": 4.0
+        },
+        {
+          "month": "Mar",
+          "projection": 4.5
+        },
+        {
+          "month": "Abr",
+          "projection": 5.0
+        }
+      ]
     }
   ]
 }

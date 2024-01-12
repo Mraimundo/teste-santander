@@ -1,18 +1,23 @@
 import { createContext } from "react";
 
-type Author = {
-  avatarUrl: string;
-  name: string;
-  role: string;
+type Selic = {
+  month: string;
+  selicRate?: number;
 };
 
-export type Selic = {
+type Inflation = {
+  month: string;
+  projection?: number;
+};
+
+export type SelicData = {
   id: number;
-  author: Author;
+  selicData: Selic[];
+  inflationData: Inflation[];
 };
 
 type SelicContextData = {
-  selic: Selic[];
+  selic: SelicData[];
   loading: boolean;
 };
 

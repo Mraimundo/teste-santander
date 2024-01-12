@@ -1,0 +1,35 @@
+.Container h2 {
+  font-weight: 500;
+  font-size: 1.25rem;
+}
+.tableContainer {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 0.5rem;
+  margin-top: 1.5rem;
+}
+
+.tableContainer th {
+  padding: 1.25rem 2rem;
+  background: var(--gray-700);
+}
+
+.tableContainer th {
+  padding: 1.25rem 2rem;
+  background: var(--gray-700);
+}
+
+.tableContainer th:first-child {
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+}
+
+.tableContainer th:last-child {
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+
+.tableContainer tbody th {
+  font-size: 1rem;
+  font-weight: 500;
+}

@@ -1,12 +1,26 @@
 import { Header } from "../../components/Header/Header";
+import { InflationTable } from "../../components/InflationTable/InflationTable";
 import { useSelicData } from "../../hooks/selic-data";
+import styles from "./selic.module.css";
+
+// const selicData = [
+//   { date: 'Jan', selicRate: 4.25 },
+//   { date: 'Feb', selicRate: 4.50 },
+// ];
+
+const inflationData = [
+  { month: "Jan", projection: 3.5 },
+  { month: "Feb", projection: 4.0 },
+];
 
 export function TaxaSelic() {
   const { loading } = useSelicData();
   return (
     <>
       {!loading && <Header />}
-      <h1>Tabela</h1>
+      <section className={styles.selicContainer}>
+        <InflationTable inflationData={inflationData} />
+      </section>
     </>
   );
 }

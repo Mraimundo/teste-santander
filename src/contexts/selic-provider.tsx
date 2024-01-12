@@ -1,8 +1,6 @@
-"use client";
-
 import { useEffect, useState } from "react";
 import data from "../data/selic.json";
-import { Selic, SelicContext } from "../contexts/selic-context";
+import { SelicData, SelicContext } from "../contexts/selic-context";
 
 type SelicProviderProps = {
   children: React.ReactNode;
@@ -10,7 +8,7 @@ type SelicProviderProps = {
 
 export function SelicProvider(props: SelicProviderProps) {
   const { children } = props;
-  const [selic, setSelic] = useState<Selic[]>([]);
+  const [selic, setSelic] = useState<SelicData[]>([]);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
