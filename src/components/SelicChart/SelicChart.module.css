@@ -1,0 +1,10 @@
+.selicChartContainer {
+  padding: 2.5rem 0 7.5rem;
+  display: flex;
+  justify-content: center;
+}
+
+.selicChartContainer h2 {
+  font-weight: 500;
+  font-size: 1.25rem;
+}
