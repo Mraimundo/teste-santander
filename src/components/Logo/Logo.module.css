@@ -1,0 +1,20 @@
+.logoLink {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+  border: none;
+}
+
+.logoLink div {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 0.375rem;
+  background: var(--green-300);
+}
+
+.logoLink strong {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  color: var(--gray-300);
+}
