@@ -1,5 +1,6 @@
 import { Header } from "../../components/Header/Header";
 import { InflationTable } from "../../components/InflationTable/InflationTable";
+import { SearchForm } from "../../components/SearchForm/SearchForm";
 import { useSelicData } from "../../hooks/selic-data";
 import styles from "./selic.module.css";
 
@@ -19,6 +20,9 @@ export function TaxaSelic() {
     <>
       {!loading && <Header />}
       <section className={styles.selicContainer}>
+        <h2>Projeção de Inflação (próximos 12 meses)</h2>
+
+        <SearchForm />
         <InflationTable inflationData={inflationData} />
       </section>
     </>

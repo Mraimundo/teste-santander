@@ -1,4 +1,3 @@
-// import { useSelicData } from "../../hooks/selic-data";
 import styles from "./InflationTable.module.css";
 
 type Inflation = {
@@ -11,14 +10,8 @@ type InflationTableProps = {
 };
 
 export function InflationTable({ inflationData }: InflationTableProps) {
-  // const { selic } = useSelicData();
-
-  // const SelidData = selic.flatMap((inflation) => inflation);
-  // const selicFilterd = SelidData.map((item) => item);
-
   return (
     <div className={styles.Container}>
-      <h2>Projeção de Inflação (próximos 12 meses)</h2>
       <table className={styles.tableContainer}>
         <thead>
           <tr>
