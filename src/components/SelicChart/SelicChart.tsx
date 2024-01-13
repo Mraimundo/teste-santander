@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import {
   LineChart,
   Line,
@@ -10,47 +11,41 @@ import {
 } from "recharts";
 
 import styles from "./SelicChart.module.css";
+import { api } from "../../lib/axios";
 
-const data = [
-  {
-    month: "Jan",
-    selicRate: 13.75,
-    year: 2023,
-  },
-  {
-    month: "Fev",
-    selicRate: 13.75,
-    year: 2023,
-  },
-  {
-    month: "Março",
-    selicRate: 13.75,
-    year: 2023,
-  },
-  {
-    month: "Abril",
-    selicRate: 12.75,
-    year: 2023,
-  },
-  {
-    month: "Maio",
-    selicRate: 12.75,
-    year: 2023,
-  },
-  {
-    month: "Junho",
-    selicRate: 12.25,
-    year: 2023,
-  },
-];
+interface SelicCharts {
+  id: string;
+  month: string;
+  selicRate: string;
+  year: string;
+}
 
-export function SelicChart() {
+interface SelicChartProps {
+  selicharts: SelicCharts[];
+}
+
+export function SelicChartContainer() {
+  const [selicharts, setSelicharts] = useState<SelicCharts[]>([]);
+
+  async function fetchSelicChart() {
+    const response = await api.get("selicharts");
+    setSelicharts(response.data);
+  }
+
+  useEffect(() => {
+    fetchSelicChart();
+  }, []);
+
+  return <SelicChart selicharts={selicharts} />;
+}
+
+function SelicChart({ selicharts }: SelicChartProps) {
   return (
     <section>
       <div className={styles.selicChartContainer}>
         <h2>Histórico de Taxa Selic</h2>
-        <ResponsiveContainer width="100%" height={350} minWidth="0">
-          <LineChart width={500} height={300} data={data}>
+        <ResponsiveContainer width="85%" height={350} minWidth="0">
+          <LineChart width={500} height={300} data={selicharts}>
             <XAxis dataKey="month" />
             <YAxis />
             <CartesianGrid stroke="#eee" />

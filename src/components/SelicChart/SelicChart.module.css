@@ -5,6 +5,7 @@
   @media (min-width: 1284px) {
     width: 100%;
     max-width: 1120px;
+    align-items: center;
     margin: 0 auto;
   }
 }
