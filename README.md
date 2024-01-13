@@ -1,6 +1,6 @@
 ## 💻 Teste Santander
 
-Esse projeto foi desenvolvido para demostrar as minhas habilidades técnicas. Trata-se de um projeto frontend, o projeto consiste na parte frontend(React) em Renderizar os dados cadastrais (não sensível) do usúario, Um gráfico com o histórico de um ano da taxa selic, Uma tabela com a projeção da inflação dos próximos 12 meses e um filtros para filtrar a inflação de cada mês.
+Esse projeto foi desenvolvido para demostrar as minhas habilidades técnicas. Trata-se de um projeto frontend, o projeto consiste na parte frontend(React) em Renderizar os dados cadastrais (não sensível) do usúario, Um gráfico com o histórico de um ano da taxa selic, Uma tabela com a projeção da inflação dos próximos 12 meses e um filtro para pesquisar a inflação por mês. E para o Backend usamos a biblioteca json-server para simular os nossos Endpoints.
 
 ## 🎨 Layout
 
@@ -14,9 +14,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 - [Typescript](https://www.typescriptlang.org/)
 - [React](https://reactjs.org/)
 - [Axios](https://axios-http.com/ptbr/docs/intro)
-- [react-hook-form](https://react-hook-form.com/docs)
-- [@hookform/resolvers](https://www.npmjs.com/package/@hookform/resolvers)
-- [zod](https://zod.dev/?id=installation)
+- [json-server](https://blog.eleven-labs.com/en/json-server/)
 - [phosphor-icons](https://phosphoricons.com/)
 - [recharts](https://recharts.org/en-US/)
 
@@ -43,8 +41,11 @@ Como o projeto foi criado com VITE, portanto depois de clonar o repositório dig
 # Instale as dependências
 $  pnpm install, npm install ou yarn add
 
-# Execute a aplicação
+# Execute a aplicação frontend
 $ npm run dev
+
+# Execute a aplicação backend
+$ npm run dev:server
 
 $ em seguida localhost:3000 em seu navegador.
 
