@@ -10,8 +10,8 @@ import {
   ResponsiveContainer,
 } from "recharts";
 
-import styles from "./SelicChart.module.css";
 import { api } from "../../lib/axios";
+import styles from "./SelicChart.module.css";
 
 interface SelicCharts {
   id: string;

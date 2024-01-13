@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { MagnifyingGlass } from "@phosphor-icons/react";
-import styles from "./InflationTable.module.css";
 import { api } from "../../lib/axios";
+import styles from "./InflationTable.module.css";
 
 interface Inflation {
   id: string;
