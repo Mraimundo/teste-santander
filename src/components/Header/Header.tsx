@@ -1,7 +1,6 @@
 import { Avatar } from "../Avatar/Avatar";
 import { Logo } from "../Logo/Logo";
 import styles from "./Header.module.css";
-// import igniteLogo from "../../assets/ignite-logo.svg";
 
 const user = {
   author: "Mouzinho Raimundo",
@@ -14,13 +13,12 @@ export function Header() {
     <header className={styles.header}>
       <section className={styles.headerContent}>
         <Logo />
-
         <div className={styles.author}>
-          <Avatar src={user.avatarUrl} />
           <div className={styles.authorInfo}>
             <strong>{user.author}</strong>
             <span>{user.role}</span>
           </div>
+          <Avatar src={user.avatarUrl} />
         </div>
       </section>
     </header>
