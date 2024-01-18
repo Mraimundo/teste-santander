@@ -1,0 +1,46 @@
+{
+  "data": [
+    {
+      "id": 1,
+      "month": "Jan",
+      "selicRate": 13.75,
+      "year": "2023"
+    },
+    {
+      "id": 2,
+      "month": "Fev",
+      "selicRate": 13.75,
+      "year": "2023"
+    },
+    {
+      "id": 3,
+      "month": "Março",
+      "selicRate": 13.75,
+      "year": "2023"
+    },
+    {
+      "id": 4,
+      "month": "Abril",
+      "selicRate": 12.75,
+      "year": "2023"
+    },
+    {
+      "id": 5,
+      "month": "Maio",
+      "selicRate": 12.75,
+      "year": "2023"
+    },
+    {
+      "id": 6,
+      "month": "Junho",
+      "selicRate": 12.25,
+      "year": "2023"
+    },
+    {
+      "id": 7,
+      "month": "Julho",
+      "selicRate": 12.15,
+      "year": "2023"
+    }
+  ]
+}

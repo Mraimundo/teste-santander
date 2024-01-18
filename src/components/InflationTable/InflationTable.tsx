@@ -1,10 +1,10 @@
 import { useEffect, useState } from "react";
 import { MagnifyingGlass } from "@phosphor-icons/react";
-import { api } from "../../lib/axios";
+import data from "../../services/data/inflationsData.json";
 import styles from "./InflationTable.module.css";
 
 interface Inflation {
-  id: string;
+  id: number;
   month: string;
   projection: string;
 }
@@ -21,13 +21,8 @@ export function InflationTableContainer() {
   const [filteredInflations, setFilteredInflations] = useState<Inflation[]>([]);
   const [searchInput, setSearchInput] = useState("");
 
-  async function fetchInflation() {
-    const response = await api.get("inflations");
-    setInflations(response.data);
-  }
-
   useEffect(() => {
-    fetchInflation();
+    setInflations(data.data);
   }, []);
 
   const searchInflations = (searchValue: string) => {

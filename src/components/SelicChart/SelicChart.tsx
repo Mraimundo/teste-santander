@@ -9,14 +9,14 @@ import {
   Legend,
   ResponsiveContainer,
 } from "recharts";
+import data from "../../services/data/selichartsData.json";
 
-import { api } from "../../lib/axios";
 import styles from "./SelicChart.module.css";
 
 interface SelicCharts {
-  id: string;
+  id: number;
   month: string;
-  selicRate: string;
+  selicRate: number;
   year: string;
 }
 
@@ -27,13 +27,8 @@ interface SelicChartProps {
 export function SelicChartContainer() {
   const [selicharts, setSelicharts] = useState<SelicCharts[]>([]);
 
-  async function fetchSelicChart() {
-    const response = await api.get("selicharts");
-    setSelicharts(response.data);
-  }
-
   useEffect(() => {
-    fetchSelicChart();
+    setSelicharts(data.data);
   }, []);
 
   return <SelicChart selicharts={selicharts} />;

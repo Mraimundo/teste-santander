@@ -1,0 +1,39 @@
+{
+  "data": [
+    {
+      "id": 1,
+      "month": "Janeiro/2024",
+      "projection": "0,29"
+    },
+    {
+      "id": 2,
+      "month": "Fevereiro/2024",
+      "projection": "0,21"
+    },
+    {
+      "id": 3,
+      "month": "Março/2024",
+      "projection": "-0,04"
+    },
+    {
+      "id": 4,
+      "month": "Abril/2024",
+      "projection": "-0,34"
+    },
+    {
+      "id": 5,
+      "month": "Maio/2024",
+      "projection": "-0,84"
+    },
+    {
+      "id": 6,
+      "month": "Junho/2024",
+      "projection": "-0,64"
+    },
+    {
+      "id": 7,
+      "month": "Julho/2024",
+      "projection": " -0,03"
+    }
+  ]
+}
