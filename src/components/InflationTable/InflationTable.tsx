@@ -57,7 +57,7 @@ export function InflationTable({
   inflations,
 }: InflationTableProps) {
   return (
-    <div className={styles.Container}>
+    <div className={styles.container}>
       <form className={styles.formContainer}>
         <input
           type="text"

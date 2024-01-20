@@ -1,3 +1,9 @@
+.container {
+  width: 650px;
+  @media (max-width: 328px) {
+    width: 100%;
+  }
+}
 .formContainer {
   display: flex;
   gap: 1rem;
@@ -55,16 +61,11 @@
   width: 100%;
   border-collapse: separate;
   border-spacing: 0 0.5rem;
-  padding: 1.5rem 0rem;
+  padding: 1rem 0rem;
 }
 
 .tableContainer th {
-  padding: 1.25rem 2rem;
-  background: var(--gray-700);
-}
-
-.tableContainer th {
-  padding: 1.25rem 2rem;
+  padding: 1rem 1rem;
   background: var(--gray-700);
 }
 

@@ -8,12 +8,14 @@ export function TaxaSelic() {
   return (
     <>
       <Header />
-      <SelicChartContainer />
-      <section className={styles.selicContainer}>
-        <h2>Projeção de Inflação (próximos 12 meses)</h2>
+      <div className={styles.wrapper}>
+        <section className={styles.selicContainer}>
+          <h2>Projeção de Inflação (próximos 12 meses)</h2>
+          <InflationTableContainer />
+        </section>
+        <SelicChartContainer />
+      </div>
 
-        <InflationTableContainer />
-      </section>
       <ButtonBackToTop />
     </>
   );
