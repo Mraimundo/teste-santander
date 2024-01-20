@@ -24,6 +24,7 @@
 
 .formContainer input::placeholder {
   color: var(--gray-500);
+  font-size: 0.875rem;
 }
 
 .formContainer button {
@@ -80,15 +81,14 @@
 }
 
 .tableContainer thead th {
-  font-size: 1.125rem;
+  font-size: 1rem;
   @media (max-width: 328px) {
     font-size: 0.875rem;
-    line-height: 1.25rem;
   }
 }
 
 .tableContainer tbody th {
-  font-size: 1rem;
+  font-size: 0.875rem;
   font-weight: 500;
 }
 

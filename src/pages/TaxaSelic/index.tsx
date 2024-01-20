@@ -9,11 +9,13 @@ export function TaxaSelic() {
     <>
       <Header />
       <div className={styles.wrapper}>
-        <section className={styles.selicContainer}>
-          <h2>Projeção de Inflação (próximos 12 meses)</h2>
+        <h2>
+          Histórico de Taxa Selic e Projeção de Inflação dos próximos 12 meses
+        </h2>
+        <div className={styles.wrapperContent}>
           <InflationTableContainer />
-        </section>
-        <SelicChartContainer />
+          <SelicChartContainer />
+        </div>
       </div>
 
       <ButtonBackToTop />

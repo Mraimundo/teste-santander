@@ -36,20 +36,17 @@ export function SelicChartContainer() {
 
 function SelicChart({ selicharts }: SelicChartProps) {
   return (
-    <section>
-      <div className={styles.selicChartContainer}>
-        <h2>Histórico de Taxa Selic</h2>
-        <ResponsiveContainer width="85%" height={350} minWidth="0">
-          <LineChart width={500} height={300} data={selicharts}>
-            <XAxis dataKey="month" />
-            <YAxis />
-            <CartesianGrid stroke="#eee" />
-            <Line type="monotone" dataKey="selicRate" stroke="#00837e" />
-            <Tooltip />
-            <Legend />
-          </LineChart>
-        </ResponsiveContainer>
-      </div>
+    <section className={styles.selicChartContainer}>
+      <ResponsiveContainer width="88%" height={350} minWidth="0">
+        <LineChart width={500} height={300} data={selicharts}>
+          <XAxis dataKey="month" />
+          <YAxis />
+          <CartesianGrid stroke="#eee" />
+          <Line type="monotone" dataKey="selicRate" stroke="#00837e" />
+          <Tooltip />
+          <Legend />
+        </LineChart>
+      </ResponsiveContainer>
     </section>
   );
 }
