@@ -1,10 +1,10 @@
 ## 💻 Teste Santander
 
-Esse projeto foi desenvolvido para demostrar as minhas habilidades técnicas. Trata-se de um projeto frontend, o projeto consiste na parte frontend(React) em Renderizar os dados cadastrais (não sensível) do usúario, Um gráfico com o histórico de um ano da taxa selic, Uma tabela com a projeção da inflação dos próximos 12 meses e um filtro para pesquisar a inflação por mês. E para o Backend usamos a biblioteca json-server para simular os nossos Endpoints.
+Esse projeto foi desenvolvido para demostrar as minhas habilidades técnicas. Trata-se de um projeto frontend, o projeto consiste na parte frontend(React) em Renderizar os dados cadastrais (não sensível) do usúario, Um gráfico com o histórico de um ano da taxa selic, Uma tabela com a projeção da inflação dos próximos 12 meses e um filtro para pesquisar a inflação por mês.
 
 ## 🎨 Layout
 
-![Teste-Santander](https://github.com/Mraimundo/portfolio/assets/53385345/f5dfc6b8-85ce-48b2-aedc-f5b0ac385c72)
+![Santander](https://github.com/Mraimundo/test-02-filmes/assets/53385345/bc764020-83ca-4dce-8624-d9b9c471fa84)
 
 ## 🥉: Tecnologias
 
@@ -43,9 +43,6 @@ $  pnpm install, npm install ou yarn add
 
 # Execute a aplicação frontend
 $ npm run dev
-
-# Execute a aplicação backend
-$ npm run dev:server
 
 $ em seguida localhost:3000 em seu navegador.
 
